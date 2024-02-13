@@ -12,7 +12,7 @@ namespace CarBook.Persistance.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-6IU1HSS;initial Catalog=CarBookDb;integrated Security=true;")
+            optionsBuilder.UseSqlServer("Server=DESKTOP-6IU1HSS;initial Catalog=CarBookDb;integrated Security=true;TrustServerCertificate=true;");
         }
         public DbSet<About> Abouts { get; set; }
         public DbSet<Banner> Banners { get; set; }
