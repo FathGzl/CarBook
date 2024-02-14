@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CarBook.Domain.Entities
+﻿namespace CarBook.Domain.Entities
 {
     public class CarPricing
     {
@@ -14,8 +8,5 @@ namespace CarBook.Domain.Entities
         public int PricingID { get; set; }
         public Pricing Pricing { get; set; }
         public decimal Amount { get; set; }
-
-
-
     }
 }
