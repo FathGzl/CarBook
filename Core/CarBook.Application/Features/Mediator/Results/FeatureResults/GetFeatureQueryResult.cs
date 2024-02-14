@@ -1,4 +1,4 @@
-﻿namespace CarBook.Application.Features.Mediator.Results.FeatureResult
+﻿namespace CarBook.Application.Features.Mediator.Results.FeatureResults
 {
     public class GetFeatureQueryResult
     {
