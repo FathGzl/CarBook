@@ -1,4 +1,4 @@
-﻿using CarBook.Application.Features.CQRS.Results.ContactResult;
+﻿using CarBook.Application.Features.CQRS.Results.ContactResults;
 using CarBook.Application.Interfaces;
 using CarBook.Domain.Entities;
 using System;

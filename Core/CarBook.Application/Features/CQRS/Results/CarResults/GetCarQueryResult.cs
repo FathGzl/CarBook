@@ -1,6 +1,6 @@
-﻿namespace CarBook.Application.Features.CQRS.Results.CarResult
+﻿namespace CarBook.Application.Features.CQRS.Results.CarResults
 {
-    public class GetCarByIdQueryResult
+    public class GetCarQueryResult
     {
         public int CarID { get; set; }
         public int BrandID { get; set; }

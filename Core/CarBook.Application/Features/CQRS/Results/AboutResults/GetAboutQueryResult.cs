@@ -1,4 +1,4 @@
-﻿namespace CarBook.Application.Features.CQRS.Results.AboutResult
+﻿namespace CarBook.Application.Features.CQRS.Results.AboutResults
 {
     public class GetAboutQueryResult
     {

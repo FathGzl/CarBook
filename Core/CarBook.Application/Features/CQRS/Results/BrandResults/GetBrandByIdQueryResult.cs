@@ -1,4 +1,4 @@
-﻿namespace CarBook.Application.Features.CQRS.Results.BrandResult
+﻿namespace CarBook.Application.Features.CQRS.Results.BrandResults
 {
     public class GetBrandByIdQueryResult
     {

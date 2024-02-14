@@ -1,5 +1,5 @@
 ﻿using CarBook.Application.Features.CQRS.Queries.BrandQueries;
-using CarBook.Application.Features.CQRS.Results.BrandResult;
+using CarBook.Application.Features.CQRS.Results.BrandResults;
 using CarBook.Application.Interfaces;
 using CarBook.Domain.Entities;
 

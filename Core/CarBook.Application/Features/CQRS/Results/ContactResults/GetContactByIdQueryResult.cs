@@ -1,4 +1,4 @@
-﻿namespace CarBook.Application.Features.CQRS.Results.ContactResult
+﻿namespace CarBook.Application.Features.CQRS.Results.ContactResults
 {
     public class GetContactByIdQueryResult
     {

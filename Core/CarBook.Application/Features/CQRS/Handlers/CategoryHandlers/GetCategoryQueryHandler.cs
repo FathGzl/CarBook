@@ -1,4 +1,4 @@
-﻿using CarBook.Application.Features.CQRS.Results.CategoryResult;
+﻿using CarBook.Application.Features.CQRS.Results.CategoryResults;
 using CarBook.Application.Interfaces;
 using CarBook.Domain.Entities;
 

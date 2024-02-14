@@ -1,5 +1,5 @@
 ﻿using CarBook.Application.Features.CQRS.Queries.BannerQueries;
-using CarBook.Application.Features.CQRS.Results.BannerResult;
+using CarBook.Application.Features.CQRS.Results.BannerResults;
 using CarBook.Application.Interfaces;
 using CarBook.Domain.Entities;
 

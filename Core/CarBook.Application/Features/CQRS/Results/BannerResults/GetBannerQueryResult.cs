@@ -1,6 +1,6 @@
-﻿namespace CarBook.Application.Features.CQRS.Results.BannerResult
+﻿namespace CarBook.Application.Features.CQRS.Results.BannerResults
 {
-    public class GetBannerByIdQueryResult
+    public class GetBannerQueryResult
     {
         public int BannerID { get; set; }
         public string Title { get; set; }

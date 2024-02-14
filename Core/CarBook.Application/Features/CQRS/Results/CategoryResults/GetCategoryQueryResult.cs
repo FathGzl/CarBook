@@ -1,4 +1,4 @@
-﻿namespace CarBook.Application.Features.CQRS.Results.CategoryResult
+﻿namespace CarBook.Application.Features.CQRS.Results.CategoryResults
 {
     public class GetCategoryQueryResult
     {
