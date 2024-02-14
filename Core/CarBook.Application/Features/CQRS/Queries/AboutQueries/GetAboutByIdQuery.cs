@@ -7,6 +7,6 @@
         public GetAboutByIdQuery(int id)
         {
             Id = id;
-        }        
+        }
     }
 }
