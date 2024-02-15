@@ -5,11 +5,11 @@ using MediatR;
 
 namespace CarBook.Application.Features.Mediator.Handlers.PricingHandlers
 {
-    public class RemovePricingCommandHendlar : IRequestHandler<RemovePricingCommand>
+    public class RemoveServiceCommandHendlar : IRequestHandler<RemovePricingCommand>
     {
         private readonly IRepository<Pricing> _repository;
 
-        public RemovePricingCommandHendlar(IRepository<Pricing> repository)
+        public RemoveServiceCommandHendlar(IRepository<Pricing> repository)
         {
             _repository = repository;
         }

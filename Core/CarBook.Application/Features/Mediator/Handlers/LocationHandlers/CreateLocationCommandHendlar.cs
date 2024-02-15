@@ -3,7 +3,7 @@ using CarBook.Application.Interfaces;
 using CarBook.Domain.Entities;
 using MediatR;
 
-namespace CarBook.Application.Features.Mediator.Handlers.LocationHandlers
+namespace CarBook.Application.Features.Mediator.Handlers.SocialMediaHandlers
 {
     public class CreateLocationCommandHendlar : IRequestHandler<CreateLocationCommand>
     {
