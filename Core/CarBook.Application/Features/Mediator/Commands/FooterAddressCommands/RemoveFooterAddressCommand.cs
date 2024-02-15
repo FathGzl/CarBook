@@ -1,4 +1,5 @@
 ﻿using MediatR;
+
 namespace CarBook.Application.Features.Mediator.Commands.FooterAddressCommands
 {
     public class RemoveFooterAddressCommand : IRequest

@@ -1,7 +1,6 @@
 ﻿using CarBook.Application.Features.Mediator.Commands.SocialMediaCommands;
 using CarBook.Application.Features.Mediator.Queries.SocialMediaQueries;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CarBook.WebApi.Controllers
