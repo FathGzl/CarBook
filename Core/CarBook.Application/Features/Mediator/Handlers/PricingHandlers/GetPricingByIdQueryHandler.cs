@@ -6,11 +6,11 @@ using MediatR;
 
 namespace CarBook.Application.Features.Mediator.Handlers.PricingHandlers
 {
-    public class GetServiceByIdQueryHandler : IRequestHandler<GetPricingByIdQuery, GetPricingByIdQueryResult>
+    public class GetPricingByIdQueryHandler : IRequestHandler<GetPricingByIdQuery, GetPricingByIdQueryResult>
     {
         private readonly IRepository<Pricing> _repository;
 
-        public GetServiceByIdQueryHandler(IRepository<Pricing> repository)
+        public GetPricingByIdQueryHandler(IRepository<Pricing> repository)
         {
             _repository = repository;
         }
