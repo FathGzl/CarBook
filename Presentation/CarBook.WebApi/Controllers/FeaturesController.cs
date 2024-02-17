@@ -31,7 +31,7 @@ namespace CarBook.WebApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateFeature(CreateTestimonialCommand command)
+        public async Task<IActionResult> CreateFeature(CreateFeatureCommand command)
         {
             await _mediator.Send(command);
             return Ok("Ekleme Başarılı");
@@ -46,7 +46,7 @@ namespace CarBook.WebApi.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpadeteFeature(UpdateTestimonialCommand command)
+        public async Task<IActionResult> UpadeteFeature(UpdateFeatureCommand command)
         {
             await _mediator.Send(command); ;
             return Ok("Güncelleme Başarılı");

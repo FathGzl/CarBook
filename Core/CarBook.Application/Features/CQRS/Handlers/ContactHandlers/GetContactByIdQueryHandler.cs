@@ -24,7 +24,7 @@ namespace CarBook.Application.Features.CQRS.Handlers.ContactHandlers
                 EMail = values.EMail,
                 Message = values.Message,
                 SendDate = values.SendDate,
-                Subject = values.Message
+                Subject = values.Subject
             };
         }
     }

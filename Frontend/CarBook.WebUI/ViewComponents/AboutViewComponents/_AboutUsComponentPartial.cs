@@ -12,12 +12,7 @@ namespace CarBook.WebUI.ViewComponents.AboutViewComponents
         {
             _httpClientFactory = httpClientFactory;
         }
-
-        public IViewComponentResult Invoke()
-        {
-            return View();
-        }
-
+        
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var client = _httpClientFactory.CreateClient();
