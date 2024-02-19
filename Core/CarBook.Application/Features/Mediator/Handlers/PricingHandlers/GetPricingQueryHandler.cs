@@ -6,7 +6,7 @@ using MediatR;
 
 namespace CarBook.Application.Features.Mediator.Handlers.PricingHandlers
 {
-    public class GetPricingQueryHandler : IRequestHandler<GetPricingQuery, List<GetPricingQueryResult>>
+    public class GetPricingQueryHandler : IRequestHandler<GetAuthorQuery, List<GetAuthorQueryResult>>
     {
         private readonly IRepository<Pricing> _repository;
 
@@ -15,10 +15,10 @@ namespace CarBook.Application.Features.Mediator.Handlers.PricingHandlers
             _repository = repository;
         }
 
-        public async Task<List<GetPricingQueryResult>> Handle(GetPricingQuery request, CancellationToken cancellationToken)
+        public async Task<List<GetAuthorQueryResult>> Handle(GetAuthorQuery request, CancellationToken cancellationToken)
         {
             var values = await _repository.GetAllAsync();
-            return values.Select(x => new GetPricingQueryResult
+            return values.Select(x => new GetAuthorQueryResult
             {
                 Name = x.Name,
                 PricingID = x.PricingID

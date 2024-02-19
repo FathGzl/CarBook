@@ -21,6 +21,7 @@ namespace CarBook.WebUI.ViewComponents.TestimonialViewComponents
             {
                 var jsonData=await responseMessage.Content.ReadAsStringAsync();
                 var values=JsonConvert.DeserializeObject<List<ResultTestimonailDto>>(jsonData);
+                return View(values);
             }
             return View();
         }
