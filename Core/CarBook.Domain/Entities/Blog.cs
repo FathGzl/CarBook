@@ -12,6 +12,6 @@
         public int CategoryID { get; set; }
         public Category Category { get; set; }
         public string Desription { get; set; }
-
+        public List<TagCloud> TagClouds { get; set; }
     }
 }
