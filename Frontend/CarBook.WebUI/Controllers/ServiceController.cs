@@ -8,6 +8,8 @@ namespace CarBook.WebUI.Controllers
     {
         public async Task<IActionResult> Index()
         {
+            ViewBag.v1 = "Hizmetler";
+            ViewBag.v1 = "Hizmetlerimiz";
             return View();
         }
     }

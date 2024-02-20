@@ -14,7 +14,7 @@ namespace CarBook.Application.Features.CQRS.Handlers.CarHandlers
 
         public List<GetLast5CarWithBrandQueryResult> Handle()
         {
-            var values = _repository.GerCarsListWithBramds();
+            var values = _repository.GerCarsListWithBrands();
             return values.Select(x => new GetLast5CarWithBrandQueryResult
             {
                 BrandName = x.Brand.Name,

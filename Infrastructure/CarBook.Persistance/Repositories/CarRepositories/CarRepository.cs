@@ -14,13 +14,13 @@ namespace CarBook.Persistance.Repositories.CarRepositories
             _context = context;
         }
 
-        public List<Car> GerCarsListWithBramds()
+        public List<Car> GerCarsListWithBrands()
         {
             var values = _context.Cars.Include(x => x.Brand).ToList();
             return values;
-        }
+        }       
 
-        public List<Car> GerLast5CarsListWithBramds()
+        public List<Car> GerLast5CarsListWithBrands()
         {
             var values = _context.Cars.Include(x => x.Brand).OrderByDescending(x => x.CarID).Take(5).ToList();
             return values;

@@ -4,8 +4,7 @@ namespace CarBook.Application.Interfaces.CarInterfaces
 {
     public interface ICarRepository
     {
-        List<Car> GerCarsListWithBramds();
-        List<Car> GerLast5CarsListWithBramds();
-
+        List<Car> GerCarsListWithBrands();
+        List<Car> GerLast5CarsListWithBrands();
     }
 }
