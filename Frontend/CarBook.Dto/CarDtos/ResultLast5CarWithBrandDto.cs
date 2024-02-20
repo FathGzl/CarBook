@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CarBook.Dto.CarDtos
+﻿namespace CarBook.Dto.CarDtos
 {
-    public class ResultGetCarWithBrand
+    public class ResultLast5CarWithBrandDto
     {
         public int CarID { get; set; }
         public int BrandID { get; set; }

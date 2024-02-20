@@ -7,9 +7,11 @@
         public int AuthorID { get; set; }
         public Author Author { get; set; }
         public string CoverImageUrl { get; set; }
+        public string BigImageUrl { get; set; }
         public DateTime CreatedDate { get; set; }
         public int CategoryID { get; set; }
         public Category Category { get; set; }
+        public string Desription { get; set; }
 
     }
 }
