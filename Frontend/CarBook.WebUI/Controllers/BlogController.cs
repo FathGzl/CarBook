@@ -31,6 +31,7 @@ namespace CarBook.WebUI.Controllers
         {
             ViewBag.v1 = "Bloglar";
             ViewBag.v2 = "Blog Detayı ve Yorumlar";
+            ViewBag.blogid = id;
             var client = _httpClientFactory.CreateClient();
             var responseMessage = await client.GetAsync("https://localhost:7049/api/Blogs/GetAllBlogsWithAuthors");
             if (responseMessage.IsSuccessStatusCode)

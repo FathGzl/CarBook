@@ -51,5 +51,12 @@ namespace CarBook.WebApi.Controllers
             await _mediator.Send(command); ;
             return Ok("Güncelleme Başarılı");
         }
+
+        [HttpGet("GetTagCloudByBlogId")]
+        public async Task<IActionResult> GetTagCloudByBlogId(int id)
+        {
+            var values = _mediator.Send(new GetTagCloudByBlogIdQuery(id));
+            return Ok(values);
+        }
     }
 }

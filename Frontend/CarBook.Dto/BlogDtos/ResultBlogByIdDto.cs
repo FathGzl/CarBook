@@ -1,8 +1,6 @@
-﻿using MediatR;
-
-namespace CarBook.Application.Features.Mediator.Commands.BlogCommands
+﻿namespace CarBook.Dto.BlogDtos
 {
-    public class UpdateBlogCommand : IRequest
+    public class ResultBlogByIdDto
     {
         public int BlogID { get; set; }
         public string Title { get; set; }
@@ -10,6 +8,7 @@ namespace CarBook.Application.Features.Mediator.Commands.BlogCommands
         public string CoverImageUrl { get; set; }
         public DateTime CreatedDate { get; set; }
         public int CategoryID { get; set; }
-        public string Description { get; set; }
+        public int Description { get; set; }
+
     }
 }
