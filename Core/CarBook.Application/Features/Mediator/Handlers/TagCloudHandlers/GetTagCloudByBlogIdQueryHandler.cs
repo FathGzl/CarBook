@@ -14,7 +14,7 @@ namespace CarBook.Application.Features.Mediator.Handlers.TagCloudHandlers
             _repository = repository;
         }
 
-        public async Task<List<GetTagCloudByBlogIdQueryResult>> IRequestHandler<GetTagCloudByBlogIdQuery, List<GetTagCloudByBlogIdQueryResult>>.Handle(GetTagCloudByBlogIdQuery request, CancellationToken cancellationToken)
+        public async Task<List<GetTagCloudByBlogIdQueryResult>> Handle(GetTagCloudByBlogIdQuery request, CancellationToken cancellationToken)
         {
             var values = _repository.GetTagCloudsByBlogID(request.Id);
             return values.Select(x => new GetTagCloudByBlogIdQueryResult
