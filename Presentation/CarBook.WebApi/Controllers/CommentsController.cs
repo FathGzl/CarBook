@@ -24,7 +24,7 @@ namespace CarBook.WebApi.Controllers
             return Ok("Ekleme Başarılı");
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult RemoveComment(int id)
         {
             var value = _commentsRepository.GetById(id);

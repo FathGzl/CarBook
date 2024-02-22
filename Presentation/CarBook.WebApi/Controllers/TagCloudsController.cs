@@ -38,7 +38,7 @@ namespace CarBook.WebApi.Controllers
         }
 
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> RemoveTagCloud(int id)
         {
             await _mediator.Send(new RemoveTagCloudCommand(id));

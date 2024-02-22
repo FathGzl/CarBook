@@ -37,8 +37,7 @@ namespace CarBook.WebApi.Controllers
             return Ok("Ekleme Başarılı");
         }
 
-
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> RemoveAuthor(int id)
         {
             await _mediator.Send(new RemoveAuthorCommand(id));
