@@ -8,6 +8,7 @@ using System.Text;
 namespace CarBook.WebUI.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Route("Admin/AdminCar")]
     public class AdminCarController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;
@@ -17,6 +18,8 @@ namespace CarBook.WebUI.Areas.Admin.Controllers
             _httpClientFactory = httpClientFactory;
         }
 
+        [Route("")]
+        [Route("Index")]
         public async Task<IActionResult> Index()
         {
             var client = _httpClientFactory.CreateClient();
@@ -32,6 +35,7 @@ namespace CarBook.WebUI.Areas.Admin.Controllers
 
 
         [HttpGet]
+        [Route("CreateCar")]
         public async Task<IActionResult> CreateCar()
         {
             var client = _httpClientFactory.CreateClient();
@@ -51,6 +55,7 @@ namespace CarBook.WebUI.Areas.Admin.Controllers
 
 
         [HttpPost]
+        [Route("CreateCar")]
         public async Task<IActionResult> CreateCar(CreateCarDto createCarDto)
         {
             var client = _httpClientFactory.CreateClient();
@@ -60,26 +65,27 @@ namespace CarBook.WebUI.Areas.Admin.Controllers
             var responseMessage = await client.PostAsync("https://localhost:7049/api/Cars", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "AdminCar", new { area = "Admin" });
             }
             return View();
         }
 
 
-
+        [Route("RemoveCar/{id}")]
         public async Task<IActionResult> RemoveCar(int id)
         {
             var client = _httpClientFactory.CreateClient();
             var responseMessage = await client.DeleteAsync($"https://localhost:7049/api/Cars/{id}");
             if (responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "AdminCar", new { area = "Admin" });
             }
             return View();
         }
 
 
         [HttpGet]
+        [Route("UpdateCar/{id}")]
         public async Task<IActionResult> UpdateCar(int id)
         {
 
@@ -96,7 +102,6 @@ namespace CarBook.WebUI.Areas.Admin.Controllers
                                                 }).ToList();
             ViewBag.BrandValues = brandValues;
 
-
             var responseMessage = await client.GetAsync($"https://localhost:7049/api/Cars/{id}");
             if (responseMessage.IsSuccessStatusCode)
             {
@@ -109,6 +114,7 @@ namespace CarBook.WebUI.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        [Route("UpdateCar/{id}")]
         public async Task<IActionResult> UpdateCar(UpdateCarDto updateCarDto)
         {
             var client = _httpClientFactory.CreateClient();
@@ -118,7 +124,7 @@ namespace CarBook.WebUI.Areas.Admin.Controllers
             var responseMessage = await client.PutAsync("https://localhost:7049/api/Cars", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "AdminCar", new { area = "Admin" });
             }
             return View();
         }

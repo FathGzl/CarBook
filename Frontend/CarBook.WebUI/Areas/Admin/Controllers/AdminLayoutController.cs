@@ -3,8 +3,12 @@
 namespace CarBook.WebUI.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Route("Admin/AdminLayout")]
     public class AdminLayoutController : Controller
     {
+
+        [Route("")]
+        [Route("Index")]
         public IActionResult Index()
         {
             return View();

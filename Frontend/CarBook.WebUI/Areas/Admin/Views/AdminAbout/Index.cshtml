@@ -1,8 +1,8 @@
-﻿@model List<ResultFeatureDto>
+﻿@model List<ResultAboutDto>
+
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
-    int count = 0;
 }
 
 <div class="page-content">
@@ -11,16 +11,17 @@
             <div class="col-xl-12">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Araba Özellikleri Listesi</h4>
+                        <h4 class="card-title">Ana Sayfa Hakkımızda Alanı</h4>
                         <p class="card-subtitle mb-4">
-                            Arabalarla ilgili yeni özellik ekleme, (Klima, Bluetooth, Audio, Elektrik vs.) özellikler listesi, özellikler üzerinde düzenleme ve bir özelliği kaldırma işlemini buradan gerçekleştirebilirsiniz. Temada veri tutarlılığını sağlayabilmek için lütfen 3'ün katı şeklinde veri girişi yapınız.
+                            Ana sayfanın ve Hakkımızda sayfasının "hakkım" alanında bulunan bilgileri aşağıdan düzenleyebilirsiniz. Tema bütünlüğünün bozulmaması adına lütfen sadece 1 tane veri girişi yapınız. Aksi durumlarda tema bütünlüğün bozulacaktır.
                         </p>
                         <div class="table-responsive">
                             <table class="table mb-0">
                                 <thead>
                                     <tr>
-                                        <th>#</th>
-                                        <th>Özellik</th>
+                                        <th>Başlık</th>
+                                        <th>Açıklama</th>
+                                        <th>Görsel</th>
                                         <th>Sil</th>
                                         <th>Güncelle</th>
                                     </tr>
@@ -28,22 +29,21 @@
                                 <tbody>
                                     @foreach (var item in Model)
                                     {
-                                        count++;
                                         <tr>
-                                            <th scope="row">@count</th>
-                                            <td>@item.Name</td>
-                                            <td><a href="/Admin/AdminFeature/RemoveFeature/@item.FeatureID" class="btn btn-outline-danger">Sil</a></td>
-                                            <td><a href="/Admin/AdminFeature/UpdateFeature/@item.FeatureID" class="btn btn-outline-success">Güncelle</a></td>
+                                            <td>@item.Title</td>
+                                            <td>@item.Description</td>
+                                            <td>@item.ImageUrl</td>
+                                            <td><a href="/Admin/AdminAbout/RemoveAbout/@item.AboutID" class="btn btn-outline-danger">Sil</a></td>
+                                            <td><a href="/Admin/AdminAbout/UpdateAbout/@item.AboutID" class="btn btn-outline-success">Güncelle</a></td>
                                         </tr>
                                     }
                                 </tbody>
                             </table>
-                            <a href="/Admin/AdminFeature/CreateFeature/" class="btn btn-outline-primary">Yeni Özellik Girişi</a>
+                            <a href="/Admin/AdminAbout/CreateAbout" class="btn btn-outline-primary">Yeni Hakkımda Alanı Girişi</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 </div>
-
