@@ -3,8 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Text;
 
-namespace CarBook.WebUI.Controllers
+namespace CarBook.WebUI.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class AdminBrandController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;

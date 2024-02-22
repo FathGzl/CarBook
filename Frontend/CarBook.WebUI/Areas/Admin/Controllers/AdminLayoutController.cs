@@ -1,7 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace CarBook.WebUI.Controllers
+namespace CarBook.WebUI.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class AdminLayoutController : Controller
     {
         public IActionResult Index()
@@ -32,6 +33,5 @@ namespace CarBook.WebUI.Controllers
         {
             return PartialView();
         }
-
     }
 }
