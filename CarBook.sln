@@ -19,9 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarBook.Application", "Core
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{05EE6BD8-D04F-496A-A1BB-8E8F2DB5E4D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarBook.WebUI", "Frontend\CarBook.WebUI\CarBook.WebUI.csproj", "{44D0267B-594D-4208-99A9-16961FBC8E84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarBook.WebUI", "Frontend\CarBook.WebUI\CarBook.WebUI.csproj", "{44D0267B-594D-4208-99A9-16961FBC8E84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarBook.Dto", "Frontend\CarBook.Dto\CarBook.Dto.csproj", "{2E3FB234-5DD0-44E8-A0DF-21A362CA1F49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarBook.Dto", "Frontend\CarBook.Dto\CarBook.Dto.csproj", "{2E3FB234-5DD0-44E8-A0DF-21A362CA1F49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
