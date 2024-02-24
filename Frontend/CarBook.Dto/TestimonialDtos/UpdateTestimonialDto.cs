@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CarBook.Dto.TestimonialDtos
+﻿namespace CarBook.Dto.TestimonialDtos
 {
-    public class ResultTestimonailDto
+    public class UpdateTestimonialDto
     {
         public int TestimonialID { get; set; }
         public string Name { get; set; }

@@ -20,7 +20,7 @@ namespace CarBook.WebUI.ViewComponents.TestimonialViewComponents
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData=await responseMessage.Content.ReadAsStringAsync();
-                var values=JsonConvert.DeserializeObject<List<ResultTestimonailDto>>(jsonData);
+                var values=JsonConvert.DeserializeObject<List<ResultTestimonialDto>>(jsonData);
                 return View(values);
             }
             return View();
