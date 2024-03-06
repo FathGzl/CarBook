@@ -4,12 +4,19 @@
 
     Layout = null;
 }
+
+<style type="text/css">
+    #drop option {
+        color: black;
+    }
+</style>
+
 <!DOCTYPE html>
 <html lang="en">
 @await Component.InvokeAsync("_HeadUILayoutComponentPartial")
 <body>
 
-    @await Component.InvokeAsync("_NavbarUILayoutComponentPartial")   
+    @await Component.InvokeAsync("_NavbarUILayoutComponentPartial")
     @await Component.InvokeAsync("_DefaultCoverUILayoutComponentPartial")
     <section class="ftco-section ftco-no-pt bg-light">
         <div class="container">
