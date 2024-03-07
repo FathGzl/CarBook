@@ -1,8 +1,9 @@
-﻿namespace CarBook.Dto.CommentDtos
+﻿using MediatR;
+
+namespace CarBook.Application.Features.Mediator.Commands.CommentCommands
 {
-    public class ResultCommentDto
+    public class CreateCommentCommand : IRequest
     {
-        public int CommentID { get; set; }
         public string Name { get; set; }
         public DateTime CreatedDate { get; set; }
         public string Description { get; set; }

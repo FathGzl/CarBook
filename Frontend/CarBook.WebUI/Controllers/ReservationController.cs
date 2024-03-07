@@ -24,7 +24,7 @@ namespace CarBook.WebUI.Controllers
 
 
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:7060/api/Locations");
+            var responseMessage = await client.GetAsync("https://localhost:7049/api/Locations");
 
             var jsonData = await responseMessage.Content.ReadAsStringAsync();
             var values = JsonConvert.DeserializeObject<List<ResultLocationDto>>(jsonData);
@@ -45,7 +45,7 @@ namespace CarBook.WebUI.Controllers
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(createReservationDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PostAsync("https://localhost:7060/api/Reservations", stringContent);
+            var responseMessage = await client.PostAsync("https://localhost:7049/api/Reservations", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index", "Default");
