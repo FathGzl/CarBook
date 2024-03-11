@@ -3,7 +3,7 @@ using CarBook.Domain.Entities;
 using CarBook.Persistance.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace UdemyCarBook.Persistence.Repositories.CarFeatureRepositories
+namespace CarBook.Persistence.Repositories.CarFeatureRepositories
 {
     public class CarFeatureRepository : ICarFeatureRepository
     {

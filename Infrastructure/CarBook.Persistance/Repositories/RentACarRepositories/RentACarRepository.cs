@@ -4,7 +4,7 @@ using CarBook.Application.Interfaces.RentACarInterfaces;
 using CarBook.Domain.Entities;
 using CarBook.Persistance.Context;
 
-namespace yCarBook.Persistence.Repositories.RentACarRepositories
+namespace CarBook.Persistence.Repositories.RentACarRepositories
 {
     public class RentACarRepository : IRentACarRepository
     {

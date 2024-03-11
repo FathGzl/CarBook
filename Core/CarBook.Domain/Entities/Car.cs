@@ -14,7 +14,7 @@
         public string Fuel { get; set; }
         public string BigImageUrl { get; set; }
         public List<CarFeature> CarFeatures { get; set; }
-        public List<CarDesription> CarDesriptions { get; set; }
+        public List<CarDescription> CarDesriptions { get; set; }
         public List<CarPricing> CarPricings { get; set; }
         public List<RentACar> RentACars { get; set; }
         public List<Reservation> Reservations { get; set; }

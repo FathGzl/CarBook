@@ -1,6 +1,6 @@
 ﻿namespace CarBook.Dto.CarDtos
 {
-    public class ResultLast5CarWithBrandDto
+    public class ResultCarWithBrandsDtos
     {
         public int CarID { get; set; }
         public int BrandID { get; set; }
