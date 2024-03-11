@@ -1,4 +1,5 @@
-﻿using CarBook.Application.Features.Mediator.Commands.AppUserCommands;
+﻿using CarBook.Application.Enums;
+using CarBook.Application.Features.Mediator.Commands.AppUserCommands;
 using CarBook.Application.Interfaces;
 using CarBook.Domain.Entities;
 using MediatR;
@@ -18,7 +19,7 @@ namespace CarBook.Application.Features.Mediator.Handlers.AppUserHandlers
             {
                 Password = request.Password,
                 Username = request.Username,
-                //AppRoleId = (int)RolesType.Member,
+                AppRoleId = (int)RolesType.Member,
                 Email = request.Email,
                 Name = request.Name,
                 Surname = request.Surname
